@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Set up autograder files
+
+cp -r /autograder/submission/graphs/ /autograder/source/graphs/
+cp -r /autograder/submission/util/ /autograder/source/util/
+
+cd /autograder/source
+
+python3 run_tests.py > /autograder/results/results.json
